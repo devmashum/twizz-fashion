@@ -1,9 +1,18 @@
-import React from 'react';
+
+import { useLoaderData } from 'react-router-dom';
+import UpcomingEvent from './UpcomingEvent';
 
 const UpcomingEvents = () => {
+    const events = useLoaderData();
+
     return (
-        <div>
-            this is upcoming events
+        <div className='grid lg:grid-cols-3 mt-5  justify-center mx-auto'>
+            {
+                events.map(event => <UpcomingEvent key={event.id} event={event}></UpcomingEvent>)
+            }
+            {
+                events.map(event => <UpcomingEvent key={event.id} event={event}></UpcomingEvent>)
+            }
         </div>
     );
 };

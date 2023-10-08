@@ -4,6 +4,7 @@
         "name": "HarmonyFest",
         "image": "https://i.ibb.co/gM9hdGN/orchestra-2790965-640.jpg",
         "price": 25.99,
+        "date": "20.10.2023",
         "title": "HarmonyFest 2023",
         "description": "HarmonyFest 2023 is a premier music event that promises to transport you to a world of musical bliss. With a lineup of top artists from various genres, this year's HarmonyFest is set to be an unforgettable experience for music enthusiasts of all ages.\n\nJoin us on a journey through the sounds of rock, pop, jazz, classical, and more as the stage comes alive with electrifying performances.\n\nWhether you're a fan of chart-topping hits, soulful ballads, or foot-tapping beats, HarmonyFest has something for everyone. Enjoy the enchanting melodies of classical serenades, get lost in the raw energy of rock revolution, and immerse yourself in the improvisational magic of jazz jam sessions.\n\nApart from the stellar musical performances, HarmonyFest offers a range of food stalls featuring delectable cuisines from around the world, as well as a dedicated area for art installations and interactive experiences.\n\nDon't miss out on this opportunity to be part of a musical extravaganza that will leave you with memories to cherish. Book your tickets now and get ready to be serenaded by the harmony of music at HarmonyFest 2023!"
     },
@@ -12,6 +13,7 @@
         "name": "Rock Revolution",
         "image": "https://i.ibb.co/V3mQj29/music-3090204-640.jpg",
         "price": 19.99,
+        "date": "25.10.2023",
         "title": "Rock Revolution Live",
         "description": "Rock Revolution Live is the ultimate rock music event that will make your heart pound and your adrenaline surge. Get ready to rock out with legendary bands and experience the raw power of rock music like never before.\n\nOur lineup includes iconic rock acts that have defined generations with their electrifying tunes. From iconic guitar riffs to anthemic lyrics, you'll witness it all at Rock Revolution Live.\n\nJoin thousands of fellow rock enthusiasts for a night of headbanging, fist-pumping, and unforgettable moments. Whether you're a die-hard fan of classic rock or a newcomer to the genre, this event promises to be an exhilarating ride through the history of rock music.\n\nIn addition to the main stage performances, Rock Revolution Live offers a dedicated 'Rock Village' with merchandise stalls, food trucks serving rock-inspired dishes, and a tattoo parlor where you can embrace your inner rebel.\n\nSecure your tickets now and get ready to be part of the Rock Revolution Live, where music and mayhem collide for an epic night you'll never forget!"
     },
@@ -20,6 +22,7 @@
         "name": "Jazz Jam",
         "image": "https://i.ibb.co/xSxsTNk/music-3264716-640.jpg",
         "price": 15.99,
+        "date": "30.10.2023",
         "title": "Jazz Jam Session",
         "description": "Step into the world of smooth melodies and improvisational brilliance at the Jazz Jam Session. This event celebrates the rich tradition of jazz music, bringing together virtuoso musicians and jazz aficionados for an unforgettable evening.\n\nThe Jazz Jam Session offers a diverse lineup of jazz styles, from sultry bluesy tunes to high-energy bebop. Our talented musicians will take you on a journey through the history of jazz, from the classic standards to contemporary interpretations.\n\nFeel the rhythm, tap your feet, and let the music carry you away. Whether you're a seasoned jazz enthusiast or just curious about this timeless genre, the Jazz Jam Session welcomes all. Enjoy craft cocktails, cozy seating, and an intimate ambiance that enhances the magic of jazz.\n\nJoin us in celebrating the improvisational spirit of jazz. Reserve your seats now for a night of soulful tunes and spontaneous musical conversations."
     },
@@ -28,6 +31,7 @@
         "name": "Classical Serenade",
         "image": "https://i.ibb.co/nnFhM00/musician-664432-640.jpg",
         "price": 29.99,
+        "date": "01.11.2023",
         "title": "Classical Serenade Night",
         "description": "Indulge in an evening of refined elegance and classical grandeur at the Classical Serenade Night. This exquisite event promises an enchanting journey through the world of classical music, performed by a world-class orchestra and renowned soloists.\n\nPrepare to be captivated by the timeless compositions of Mozart, Beethoven, Tchaikovsky, and other masters of the classical repertoire. The symphonic richness and emotive depth of classical music will transport you to a realm of pure artistic beauty.\n\nThe Classical Serenade Night is a celebration of musical sophistication and cultural heritage. The venue, adorned with chandeliers and adorned with classical art, provides the perfect backdrop for this musical soiree.\n\nEnhance your evening with pre-concert dining options featuring gourmet cuisine and fine wines. Immerse yourself in the elegance of classical music and experience an unforgettable night of symphonic bliss.\n\nSecure your tickets for an evening of timeless classics that will resonate in your heart long after the final note."
     },
@@ -36,6 +40,7 @@
         "name": "Indie Groove",
         "image": "https://i.ibb.co/vms6NWV/musician-1658887-640.jpg",
         "price": 14.99,
+        "date": "10.11.2023",
         "title": "Indie Groove Festival",
         "description": "Explore the vibrant world of independent music at the Indie Groove Festival. This unique event showcases emerging indie bands and artists, giving you the chance to discover fresh, innovative sounds that are redefining the music scene.\n\nThe Indie Groove Festival features a lineup of indie rock, alternative, folk, and experimental acts, each bringing their own distinct style to the stage. Whether you're into soulful ballads or energetic indie anthems, this festival has it all.\n\nBeyond the music, immerse yourself in a creative wonderland with interactive art installations, artisanal food vendors, and a vibrant community of fellow music enthusiasts.\n\nJoin us in celebrating the spirit of indie music, where authenticity and creativity reign supreme. Get your tickets now and be part of an eclectic musical journey that will broaden your musical horizons."
     },
@@ -44,6 +49,7 @@
         "name": "Electronic Beats",
         "image": "https://i.ibb.co/gM9hdGN/orchestra-2790965-640.jpg",
         "price": 22.99,
+        "date": "30.11.2023",
         "title": "Electronic Beats Extravaganza",
         "description": "Prepare to be immersed in a world of pulsating rhythms and electronic euphoria at the Electronic Beats Extravaganza. This electrifying event is a celebration of all things electronic, featuring top DJs, producers, and live electronic acts.\n\nFeel the bass reverberate through your body as world-renowned electronic artists take the stage. From techno to house, trance to ambient, the Electronic Beats Extravaganza covers the entire spectrum of electronic music, ensuring there's something for every electronic music enthusiast.\n\nStep into a mesmerizing visual wonderland with cutting-edge lighting, projection mapping, and mind-bending visuals that synchronize with the music. It's a sensory journey that will transport you to another dimension.\n\nJoin us for an unforgettable night of non-stop dancing and electronic exploration. Grab your tickets now and become part of the Electronic Beats Extravaganza"
     }

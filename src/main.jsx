@@ -16,6 +16,7 @@ import Register from './Users/Register';
 import Event from './Pages/Event';
 import Error from './Pages/Error';
 import AuthProvider from './Providers/AuthProvider';
+import PrivateRoute from './Users/PrivateRoute';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,11 +30,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/services',
-        element: <Services></Services>
+        element: <PrivateRoute> <Services></Services></PrivateRoute>,
+        loader: () => fetch('/services.json')
       },
       {
         path: '/upcoming-events',
-        element: <UpcomingEvents></UpcomingEvents>
+        element: <PrivateRoute><UpcomingEvents></UpcomingEvents></PrivateRoute>,
+        loader: () => fetch('/events.json')
       },
       {
         path: '/contact',
@@ -49,9 +52,14 @@ const router = createBrowserRouter([
       },
       {
         path: '/event/:id',
-        element: <Event></Event>,
+        element: <PrivateRoute><Event></Event></PrivateRoute>,
         loader: () => fetch('/events.json')
       },
+      // {
+      //   path: '/event/:id',
+      //   element: <PrivateRoute><Event></Event></PrivateRoute>,
+      //   loader: ({ params }) => fetch(`/events.json/${params.id}`)
+      // },
     ]
   },
 ]);

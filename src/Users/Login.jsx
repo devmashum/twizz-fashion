@@ -1,8 +1,12 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProvider';
+import swal from 'sweetalert';
 
 const Login = () => {
+    const location = useLocation();
+    console.log(location);
+    const navigate = useNavigate();
 
     const { signIn } = useContext(AuthContext);
     const handleLogin = e => {
@@ -13,7 +17,13 @@ const Login = () => {
         console.log(email, password);
         signIn(email, password)
             .then(result => {
-                console.log(result.user)
+                console.log(result.user);
+                if (result.user) {
+                    swal("Good job!", "You logged successfully", "success");
+                    navigate(location?.state ? location.state : '/');
+                } else {
+                    swal("Good job!", "You logged successfully", "error");
+                }
             })
             .catch(error => {
                 console.error(error);

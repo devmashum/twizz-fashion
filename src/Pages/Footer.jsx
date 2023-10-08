@@ -1,21 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer className="footer p-10 bg-base-100 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-base-content">
+            ,
             <nav>
-                <header className="footer-title">Services</header>
-                <a className="link link-hover">Branding</a>
-                <a className="link link-hover">Design</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Advertisement</a>
-            </nav>
-            <nav>
-                <header className="footer-title">Company</header>
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
+                <header className="footer-title">Music Events</header>
+                <Link to='/'>Home</Link>
+                <Link to='/services'>Services</Link>
+                <Link to='upcoming-events'>Upcoming Events</Link>
+                <Link to='/contact'>Contact</Link>
             </nav>
             <nav>
                 <header className="footer-title">Legal</header>

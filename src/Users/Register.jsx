@@ -2,7 +2,7 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProvider';
-
+import swal from 'sweetalert';
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
@@ -22,9 +22,17 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
+                if (result.user) {
+                    swal("Good job!", "You have registered successfully", "success");
+                }
+                else {
+                    swal("Nope!", "You registration was not successful", "error");
+                }
             })
             .catch(error => {
                 console.error(error)
+
+
             })
     }
 

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "1",
+        "date": "2023-11-15",
+        "title": "Rock Concert",
+        "price": 35.99,
+        "location": "Los Angeles, CA",
+        "image": "https://i.ibb.co/mFst0K5/https-cdn-evbuc-com-images-222769299-298303473048-1-original.jpg"
+    },
+    {
+        "id": "2",
+        "date": "2023-12-05",
+        "title": "Jazz Festival",
+        "price": 45.50,
+        "location": "New Orleans, LA",
+        "image": "https://i.ibb.co/BLFKDZb/https-cdn-evbuc-com-images-520576689-186680860246-1-original.jpg"
+    },
+    {
+        "id": "3",
+        "date": "2023-10-20",
+        "title": "Electronic Dance Party",
+        "price": 25.99,
+        "location": "Miami, FL",
+        "image": "https://i.ibb.co/XJhVd2d/https-cdn-evbuc-com-images-540928069-415044164357-1-original.jpg"
+    },
+    {
+        "id": "4",
+        "date": "2023-11-30",
+        "title": "Classical Symphony Orchestra",
+        "price": 55.00,
+        "location": "Boston, MA",
+        "image": "https://i.ibb.co/GHDzgGt/https-cdn-evbuc-com-images-566034439-372859778321-1-original.jpg"
+    },
+    {
+        "id": "5",
+        "date": "2023-12-18",
+        "title": "Hip-Hop Showcase",
+        "price": 40.25,
+        "location": "Atlanta, GA",
+        "image": "https://i.ibb.co/7VmSxY5/https-cdn-evbuc-com-images-575656069-238666601843-1-original.jpg"
+    },
+    {
+        "id": "6",
+        "date": "2023-10-25",
+        "title": "Country Music Festival",
+        "price": 30.50,
+        "location": "Nashville, TN",
+        "image": "https://i.ibb.co/0mTYMV7/https-cdn-evbuc-com-images-579041089-248208186649-1-original.jpg"
+    },
+    {
+        "id": "7",
+        "date": "2023-11-10",
+        "title": "Indie Rock Night",
+        "price": 28.99,
+        "location": "Austin, TX",
+        "image": "https://i.ibb.co/8xzFvMv/https-cdn-evbuc-com-images-590333519-410506823757-1-original.jpg"
+    },
+    {
+        "id": "8",
+        "date": "2023-12-28",
+        "title": "Reggae Jam Session",
+        "price": 20.00,
+        "location": "Kingston, Jamaica",
+        "image": "https://i.ibb.co/2Mwstpk/https-cdn-evbuc-com-images-596187399-177561696835-1-original.jpg"
+    }
+]

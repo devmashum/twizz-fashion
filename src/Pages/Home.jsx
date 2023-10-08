@@ -10,7 +10,7 @@ const Home = () => {
             <div className='lg:flex'>
                 <div className='lg:w-[70%] p-20 bg-gradient-to-r from-cyan-500 to-blue-500'>
                     <h1 className=' text-6xl text-purple-600  mb-3'>Music Events</h1>
-                    <h2 className=' text-4xl text-blue-100'>in Dhaka</h2>
+                    <h2 className=' text-4xl text-blue-100'>in Berlin</h2>
                     <h3 className=' text-2xl text-blue-100'>Discover popular events in the 'Music' category in your area and online.</h3>
                 </div>
                 <div className='lg:w-[30%]'>
