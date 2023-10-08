@@ -35,7 +35,7 @@ const Contact = () => {
 
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">send</button>
+                        <button className="btn btn-primary bg-gradient-to-r from-cyan-500 to-blue-500 text-white">send</button>
                     </div>
                 </form>
             </div>

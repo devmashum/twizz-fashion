@@ -13,10 +13,14 @@ import UpcomingEvents from './Pages/UpcomingEvents';
 import Contact from './Pages/Contact';
 import Login from './Users/Login';
 import Register from './Users/Register';
+import Event from './Pages/Event';
+import Error from './Pages/Error';
+import AuthProvider from './Providers/AuthProvider';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: '/',
@@ -43,11 +47,16 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register></Register>
       },
+      {
+        path: '/event/:id',
+        element: <Event></Event>,
+        loader: () => fetch('/events.json')
+      },
     ]
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider><RouterProvider router={router} /></AuthProvider>
   </React.StrictMode>,
 )
