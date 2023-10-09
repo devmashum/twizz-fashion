@@ -19,12 +19,12 @@ const Register = () => {
         console.log(name, photo, email, password)
         // validation
 
-        if (password.length <= 6) {
+        if (password.length < 6) {
             setRegisterError('Password must be longer than 6 characters');
             return;
         }
         else if
-            (!/([A-Z])([?=.*[@$!%*?&])/.test(password)) {
+            (!/([A-Z])/.test(password)) {
             setRegisterError('Your password should have at least one uppercase letter and one special character.');
             return;
         }
