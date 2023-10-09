@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProvider';
 import swal from 'sweetalert';
@@ -16,6 +16,12 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                if (result.user) {
+                    swal("Good job!", "You logged successfully", "success");
+                    navigate(location?.state ? location.state : '/');
+                } else {
+                    swal("Good job!", "You logged successfully", "error");
+                }
             })
             .catch(error => {
                 console.log('error', error.message)

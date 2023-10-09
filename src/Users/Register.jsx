@@ -1,10 +1,10 @@
 
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProvider';
 import swal from 'sweetalert';
 const Register = () => {
-
+    const [registerError, setRegisterError] = useState('');
     const { createUser } = useContext(AuthContext);
 
 
@@ -17,6 +17,20 @@ const Register = () => {
         const name = form.get('name');
         const photo = form.get('photo');
         console.log(name, photo, email, password)
+        // validation
+
+        if (password.length <= 6) {
+            setRegisterError('Password must be longer than 6 characters');
+            return;
+        }
+        else if
+            (!/([A-Z])([?=.*[@$!%*?&])/.test(password)) {
+            setRegisterError('Your password should have at least one uppercase letter and one special character.');
+            return;
+        }
+
+
+        setRegisterError('');
 
         // Create User
         createUser(email, password)
@@ -30,7 +44,8 @@ const Register = () => {
                 }
             })
             .catch(error => {
-                console.error(error)
+                console.error(error);
+                setRegisterError(error.message);
 
 
             })
@@ -69,6 +84,11 @@ const Register = () => {
                     <button className="btn btn-primary bg-gradient-to-r from-cyan-500 to-blue-500">Login</button>
                 </div>
                 <p>Already have an account please <Link className=' text-blue-600 font-extrabold' to='/login'>Login</Link> </p>
+                <hr />
+                {
+                    registerError && <p className='text-red-600'>{registerError}</p>
+                }
+                <hr />
             </form>
 
 
