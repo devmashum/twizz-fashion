@@ -21,7 +21,11 @@ const NavBar = () => {
         <li className=' text-xl font-bold text-white'><NavLink to='/services'>Services</NavLink></li>
 
         <li className=' text-xl font-bold text-white'><NavLink to='/upcoming-events'>Upcoming Events</NavLink></li>
+
+
+        <li className=' text-xl font-bold text-white'><NavLink to='/addproducts'>Add Products</NavLink></li>
         <li className=' text-xl font-bold text-white'><NavLink to='/contact'>Contact</NavLink></li>
+        <li className=' text-xl font-bold text-white lg:ml-20 border border-1'><NavLink to='/mycart'>My Cart</NavLink></li>
 
     </>
 
@@ -37,7 +41,7 @@ const NavBar = () => {
                     </ul>
                 </div>
 
-                <Link to='/'><a className="btn btn-ghost normal-case text-base lg:text-3xl font-extrabold  text-white">Music Events</a></Link>
+                <Link to='/'><a className="btn btn-ghost normal-case text-base lg:text-3xl font-extrabold  text-white">Twizz-Fashion</a></Link>
 
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -45,6 +49,7 @@ const NavBar = () => {
                     {navLinks}
                 </ul>
             </div>
+
             <div className="navbar-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
@@ -55,6 +60,7 @@ const NavBar = () => {
 
                     </div>
                 </label>
+
                 {
                     user ? <button onClick={handleSignOut} className='btn'>Sign Out</button>
                         : <Link to={'/login'}>

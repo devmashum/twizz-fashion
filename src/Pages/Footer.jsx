@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer p-10 bg-base-100 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-base-content">
             ,
             <nav>
-                <header className="footer-title">Music Events</header>
+                <header className="footer-title">Twizz Fashion</header>
                 <Link to='/'>Home</Link>
                 <Link to='/services'>Services</Link>
                 <Link to='upcoming-events'>Upcoming Events</Link>

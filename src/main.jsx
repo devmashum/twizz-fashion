@@ -17,6 +17,14 @@ import Event from './Pages/Event';
 import Error from './Pages/Error';
 import AuthProvider from './Providers/AuthProvider';
 import PrivateRoute from './Users/PrivateRoute';
+import AddProducts from './Pages/AddProducts';
+import MyCart from './Pages/MyCart';
+import Nike from './Brands/Nike';
+import Adidas from './Brands/Adidas';
+import Gucci from './Brands/Gucci';
+import Zara from './Brands/Zara';
+import HugoBoss from './Brands/HugoBoss';
+import Levis from './Brands/Levis';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -55,6 +63,38 @@ const router = createBrowserRouter([
         element: <PrivateRoute><Event></Event></PrivateRoute>,
         loader: () => fetch('/events.json')
       },
+      {
+        path: '/addproducts',
+        element: <PrivateRoute><AddProducts></AddProducts></PrivateRoute>,
+      },
+      {
+        path: '/mycart',
+        element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+      },
+      {
+        path: '/nike',
+        element: <Nike></Nike>
+      },
+      {
+        path: '/adidas',
+        element: <Adidas></Adidas>
+      },
+      {
+        path: '/gucci',
+        element: <Gucci></Gucci>
+      },
+      {
+        path: '/zara',
+        element: <Zara></Zara>
+      },
+      {
+        path: '/hugoboss',
+        element: <HugoBoss></HugoBoss>
+      },
+      {
+        path: '/levis',
+        element: <Levis></Levis>
+      }
       // {
       //   path: '/event/:id',
       //   element: <PrivateRoute><Event></Event></PrivateRoute>,
