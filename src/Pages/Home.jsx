@@ -2,12 +2,16 @@ import { NavLink, useLoaderData } from 'react-router-dom';
 import banner from '../assets/hangers-1850082_640.jpg'
 
 import Events from './Events';
-const Home = () => {
+const Home = ({ product }) => {
     const events = useLoaderData();
     console.log(events);
+
+    console.log(product);
+
+
     return (
         <div>
-            <div className='lg:flex'>
+            <div className='md:flex gap-5'>
                 <div className='lg:w-[70%] p-20 bg-gradient-to-r from-cyan-500 to-blue-500'>
                     <h1 className=' text-6xl text-purple-600 font-extrabold  mb-3'>Fashion Week </h1>
                     <h2 className=' text-4xl text-blue-100'>in Berlin</h2>
@@ -18,7 +22,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='grid lg:grid-cols-3 text-center w-[80%] gap-10 mt-5 mx-auto'>
+            <div className='grid md:grid-cols-3 text-center w-[80%] gap-10 mt-5 mx-auto'>
 
                 <NavLink to={'/nike'}><div className="card w-96 bg-base-100 shadow-xl bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-500">
 
@@ -84,6 +88,8 @@ const Home = () => {
 
             </div>
 
+
+
             <div className='grid lg:grid-cols-3 max-w-max mx-auto mt-5 gap-6'>
 
                 {
@@ -92,6 +98,8 @@ const Home = () => {
 
 
             </div>
+
+
         </div>
 
 

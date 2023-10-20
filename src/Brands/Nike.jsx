@@ -1,6 +1,11 @@
+import { useLoaderData } from "react-router-dom";
 import nike from "../assets/sale-banner.png";
+import Home from "../Pages/Home";
 
 const Nike = () => {
+    const products = useLoaderData();
+
+
     return (
         <div>
             <div className="carousel w-full">
@@ -33,6 +38,14 @@ const Nike = () => {
                     </div>
                 </div>
             </div>
+
+            <p>
+                Products: {products.length}
+            </p>
+
+
+
+
         </div>
     );
 };

@@ -2,7 +2,7 @@
 import Swal from 'sweetalert2'
 const AddProducts = () => {
 
-    const handleAddCoffee = event => {
+    const handleAddProducts = event => {
         event.preventDefault();
 
         const form = event.target;
@@ -17,7 +17,7 @@ const AddProducts = () => {
         const newProducts = { name, brandname, type, price, description, rating, image };
         console.log(newProducts);
         // send Data to the server
-        fetch('http://localhost:3000/coffee', {
+        fetch('http://localhost:3000/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -30,9 +30,9 @@ const AddProducts = () => {
                 if (data.insertedId) {
                     Swal.fire({
                         title: 'success!',
-                        text: 'User added successfully',
+                        text: 'Product added successfully',
                         icon: 'success',
-                        confirmButtonText: 'Cool'
+                        confirmButtonText: 'Okay'
                     })
                 }
             })
@@ -42,7 +42,7 @@ const AddProducts = () => {
         <div className="bg-blue-100 p-24">
 
             <h3 className="text-3xl font-extrabold text-center mb-10">Add Products</h3>
-            <form onSubmit={handleAddCoffee}>
+            <form onSubmit={handleAddProducts}>
 
                 <div className="md:flex gap-5 mb-3">
                     <div className="form-control md:w-1/2">

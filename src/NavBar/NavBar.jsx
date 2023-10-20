@@ -24,8 +24,9 @@ const NavBar = () => {
 
 
         <li className=' text-xl font-bold text-white'><NavLink to='/addproducts'>Add Products</NavLink></li>
+        <li className=' text-xl font-bold text-white'><NavLink to='/allproducts'>All Products</NavLink></li>
         <li className=' text-xl font-bold text-white'><NavLink to='/contact'>Contact</NavLink></li>
-        <li className=' text-xl font-bold text-white lg:ml-20 border border-1'><NavLink to='/mycart'>My Cart</NavLink></li>
+        <li className=' text-xl font-bold text-white border border-1'><NavLink to='/mycart'>My Cart</NavLink></li>
 
     </>
 
