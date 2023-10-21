@@ -8,12 +8,11 @@ import {
 } from "react-router-dom";
 import Root from './Root/Root';
 import Home from './Pages/Home';
-import Services from './Pages/Services';
-import UpcomingEvents from './Pages/UpcomingEvents';
+
 import Contact from './Pages/Contact';
 import Login from './Users/Login';
 import Register from './Users/Register';
-import Event from './Pages/Event';
+
 import Error from './Pages/Error';
 import AuthProvider from './Providers/AuthProvider';
 import PrivateRoute from './Users/PrivateRoute';
@@ -38,16 +37,7 @@ const router = createBrowserRouter([
         element: <Home></Home>,
         loader: () => fetch('/events.json')
       },
-      {
-        path: '/services',
-        element: <PrivateRoute> <Services></Services></PrivateRoute>,
-        loader: () => fetch('/services.json')
-      },
-      {
-        path: '/upcoming-events',
-        element: <PrivateRoute><UpcomingEvents></UpcomingEvents></PrivateRoute>,
-        loader: () => fetch('/events.json')
-      },
+
       {
         path: '/contact',
         element: <Contact></Contact>
@@ -60,11 +50,7 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register></Register>
       },
-      {
-        path: '/event/:id',
-        element: <PrivateRoute><Event></Event></PrivateRoute>,
-        loader: () => fetch('/events.json')
-      },
+
       {
         path: '/addproducts',
         element: <PrivateRoute><AddProducts></AddProducts></PrivateRoute>,
@@ -72,6 +58,7 @@ const router = createBrowserRouter([
       {
         path: '/mycart',
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+        loader: () => fetch('http://localhost:3000/nike')
       },
       {
         path: '/allproducts',
@@ -112,7 +99,8 @@ const router = createBrowserRouter([
         path: '/details/:_id',
         element: <ProductDetails></ProductDetails>,
         loader: ({ params }) => fetch(`products/${params._id}`)
-      }
+      },
+
       // {
       //   path: '/event/:id',
       //   element: <PrivateRoute><Event></Event></PrivateRoute>,

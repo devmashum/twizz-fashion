@@ -1,7 +1,5 @@
 import { NavLink, useLoaderData } from 'react-router-dom';
 import banner from '../assets/hangers-1850082_640.jpg'
-
-import Events from './Events';
 const Home = ({ product }) => {
     const events = useLoaderData();
     console.log(events);
@@ -22,7 +20,7 @@ const Home = ({ product }) => {
                 </div>
             </div>
 
-            <div className='grid md:grid-cols-3 text-center w-[80%] gap-10 mt-5 mx-auto'>
+            <div className='grid md:grid-cols-3 text-center lg:w-[80%] gap-10 mt-5 mx-auto py-3'>
 
                 <NavLink to={'/nike'}><div className="card w-96 bg-base-100 shadow-xl bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-500">
 
@@ -90,14 +88,6 @@ const Home = ({ product }) => {
 
 
 
-            <div className='grid lg:grid-cols-3 max-w-max mx-auto mt-5 gap-6'>
-
-                {
-                    events.map(event => <Events key={event.id} event={event}></Events>)
-                }
-
-
-            </div>
 
 
         </div>
