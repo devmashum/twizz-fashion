@@ -26,6 +26,7 @@ import Zara from './Brands/Zara';
 import HugoBoss from './Brands/HugoBoss';
 import Levis from './Brands/Levis';
 import AllProducts from './Brands/AllProducts';
+import ProductDetails from './Brands/ProductDetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -84,23 +85,33 @@ const router = createBrowserRouter([
       },
       {
         path: '/adidas',
-        element: <Adidas></Adidas>
+        element: <Adidas></Adidas>,
+        loader: () => fetch('http://localhost:3000/products')
       },
       {
         path: '/gucci',
-        element: <Gucci></Gucci>
+        element: <Gucci></Gucci>,
+        loader: () => fetch('http://localhost:3000/products')
       },
       {
         path: '/zara',
-        element: <Zara></Zara>
+        element: <Zara></Zara>,
+        loader: () => fetch('http://localhost:3000/products')
       },
       {
         path: '/hugoboss',
-        element: <HugoBoss></HugoBoss>
+        element: <HugoBoss></HugoBoss>,
+        loader: () => fetch('http://localhost:3000/products')
       },
       {
         path: '/levis',
-        element: <Levis></Levis>
+        element: <Levis></Levis>,
+        loader: () => fetch('http://localhost:3000/products')
+      },
+      {
+        path: '/details/:_id',
+        element: <ProductDetails></ProductDetails>,
+        loader: ({ params }) => fetch(`products/${params._id}`)
       }
       // {
       //   path: '/event/:id',

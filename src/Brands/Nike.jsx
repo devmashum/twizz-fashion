@@ -1,51 +1,55 @@
-import { useLoaderData } from "react-router-dom";
+import NikeCard from './BrandCards/NikeCard';
 import nike from "../assets/sale-banner.png";
-import Home from "../Pages/Home";
+import { useLoaderData } from 'react-router-dom';
 
 const Nike = () => {
+
     const products = useLoaderData();
-
-
+    const nikeProducts = products.filter(product => product.brandname === 'Nike');
     return (
         <div>
-            <div className="carousel w-full">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img src={nike} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
+            <div>
+                <div className="carousel w-full">
+                    <div id="slide1" className="carousel-item relative w-full">
+                        <img src={nike} className="w-full" />
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" className="btn btn-circle">❮</a>
+                            <a href="#slide2" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img src={nike} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
+                    <div id="slide2" className="carousel-item relative w-full">
+                        <img src={nike} className="w-full" />
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" className="btn btn-circle">❮</a>
+                            <a href="#slide3" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                </div>
-                <div id="slide3" className="carousel-item relative w-full">
-                    <img src={nike} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
+                    <div id="slide3" className="carousel-item relative w-full">
+                        <img src={nike} className="w-full" />
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" className="btn btn-circle">❮</a>
+                            <a href="#slide4" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                </div>
-                <div id="slide4" className="carousel-item relative w-full">
-                    <img src={nike} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
+                    <div id="slide4" className="carousel-item relative w-full">
+                        <img src={nike} className="w-full" />
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" className="btn btn-circle">❮</a>
+                            <a href="#slide1" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <p>
-                Products: {products.length}
-            </p>
+            <div>
+                <h3 className="text-center text-3xl my-5">Nike Products</h3>
+                <div className="grid md:grid-cols-3 gap-5 m-5">
+                    {nikeProducts.map(product => (
+                        <NikeCard key={product.id} product={product} />
+                    ))}
+                </div>
 
-
-
-
+            </div>
         </div>
     );
 };

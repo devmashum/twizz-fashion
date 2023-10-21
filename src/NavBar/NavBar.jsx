@@ -42,7 +42,7 @@ const NavBar = () => {
                     </ul>
                 </div>
 
-                <Link to='/'><a className="btn btn-ghost normal-case text-base lg:text-3xl font-extrabold  text-white">Twizz-Fashion</a></Link>
+                <Link to='/'><a className="btn btn-ghost normal-case text-base lg:text-2xl font-extrabold  text-white border border-white bg-purple-500">Twizz-Fashion</a></Link>
 
             </div>
             <div className="navbar-center hidden lg:flex">

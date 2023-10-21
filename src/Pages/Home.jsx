@@ -11,8 +11,8 @@ const Home = ({ product }) => {
 
     return (
         <div>
-            <div className='md:flex gap-5'>
-                <div className='lg:w-[70%] p-20 bg-gradient-to-r from-cyan-500 to-blue-500'>
+            <div className='md:flex'>
+                <div className='lg:w-[60%] p-20 bg-gradient-to-r from-cyan-500 to-blue-500'>
                     <h1 className=' text-6xl text-purple-600 font-extrabold  mb-3'>Fashion Week </h1>
                     <h2 className=' text-4xl text-blue-100'>in Berlin</h2>
                     <h3 className=' text-2xl text-blue-100'>Discover popular events in the 'Fashion' category in your area and online.</h3>
